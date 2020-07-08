@@ -586,6 +586,10 @@ footer button:hover {
     border-radius: 50%;
 }
 
+.fourth-section .img-fluid {
+    width: 100%;   
+}
+
 /* end of style of the fourth section */
 
 /* style of the fifth section */
