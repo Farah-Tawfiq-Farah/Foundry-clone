@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Foundry Clone</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/abd2e7e1fe.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <!-- create navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top"> 
+            <a class="navbar-brand" href="index.html" style="letter-spacing: 4px;">FARAH</a>
+            <!-- create hamburger button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- create all items in that hamburger -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <!-- some nav items (same pages) -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="FAQ.html">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Contact-Us.html">CONTACT US</a>
+                    </li>
+                    <!-- pages dropdown menu -->
+                    <li class="nav-item dropdown pages-item">
+                        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            PAGES <i class="fas fa-angle-down fa-lg"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right animate slideIn pages-div" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="index.html">Home</a>
+                            <a class="dropdown-item" href="FAQ.html">FAQ</a>
+                            <a class="dropdown-item" href="Contact-Us.html">Contact Us</a>
+                        </div>
+                    </li>
+                    <!-- Search bar dropdown menu -->
+                    <li class="nav-item dropdown search-item">
+                        <a class="nav-link drop-btn" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-search fa-lg"></i><span class="search-text"> SEARCH SITE</span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right animate slideIn search-dropdown" aria-labelledby="navbarDropdown" style="padding: 0;">
+                            <form class="form-inline search-form">
+                                <input type="text" placeholder="Search" aria-label="Search">
+                            </form>
+                        </div>
+                    </li>
+                    <!-- language dropdown menu -->
+                    <li class="nav-item dropdown lang-item">
+                        <a class="nav-link drop-btn" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            ENG <i class="fas fa-angle-down fa-lg"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right animate slideIn languages-div" aria-labelledby="navbarDropdown" style="padding: 0;">
+                            <a class="dropdown-item" href="#">French</a>
+                            <a class="dropdown-item" href="#">Spanish</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- carousel -->
+        <div id="my-carousel" class="container-fluid no-padding">
+            <div class="col-lg-12 no-padding">
+                <div id="index-carousel" class="carousel slide carousel-fade" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#index-carousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#index-carousel" data-slide-to="1"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&   =753&q=80" class="d-block w-100">
+                            <div class="carousel-caption">
+                                <h1>It is a long established fact</h1><span class="new-line"></br></span>
+                                <p>Build beautiful, contemporary sites in just moments.</p><span class="new-line"></br></span>
+                                <button type="button" class="btn btn-primary carousel-button">Get Ready</button>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://images.unsplash.com/photo-1471922694854-ff1b63b20054?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&   =1504&q=8" class="d-block w-100">
+                            <div class="carousel-caption">
+                                <h1>There are many variations</h1><span class="new-line"></br></span>
+                                <p>Build beautiful, contemporary sites in just moments.</p><span class="new-line"></br></span>
+                                <button type="button" class="btn btn-success carousel-button">Get Ready</button>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#index-carousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#index-carousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- first section -->
+        <div class="container first-section">
+            <div class="row align-items-center">
+                <div class="col-sm-12 text-center">
+                    <div class="row justify-content-center">
+                        <div class="col-10">
+                            <h1>Sleek, Flexible & Stylish.</h1>
+                            <p>Foundry is a remarkably complete template offering you a plethora of handcrafted design elements. Whether promoting a product, service or portfolio - Foundry's unique and flexible style has you covered.</p>
+                        </div>
+                    </div>
+                </div>              
+            </div>
+        </div> 
+
+        <!-- second section -->
+        <div class="container-fluid second-section">
+            <div class="row align-items-center px-lg-5">
+                <div class="col-sm-12 col-md-6 mb-sm-4">
+                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=752&q=80" class="img-fluid">
+                </div>
+                <div class="col-sm-12 col-md-6 second-col">
+                    <h2 style="color: #666;">Build a slick, modern site faster than ever</h2>
+                    <p>Foundry is your complete design toolkit, built from the ground up to be flexible, extensible and stylish. Building slick, contemporary sites has never been this easy!</p>
+                    <button>Explore</button>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- third section -->
+        <div class="container-fluid third-section">
+            <div class="row text-center first-row">
+                <div class="col">
+                    <p class="third-section-header">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old</p>
+                </div>
+            </div>
+            <div class="row text-center second-row">
+                <div class="col-md-6">
+                    <i class="far fa-grin-hearts"></i>
+                    <h2>EXPERT, MODULAR DESIGN</h2></br>
+                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+                </div>
+                <div class="col-md-6 second-item">
+                    <i class="far fa-heart"></i>
+                    <h2>FLEXIBILITY FOR DEVELOPERS</h2></br>
+                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- fourth section -->
+        <div class="container-fluid fourth-section">
+            <div class="row align-items-center px-lg-5">
+                <div class="col-sm-12 col-md-6 mb-sm-4 order-1 order-md-2">
+                    <img src="https://images.unsplash.com/photo-1464938050520-ef2270bb8ce8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=753&q=80" class="img-fluid">
+                </div>
+                <div class="col-sm-12 col-md-6 second-col order-2 order-md-1">
+                    <h2 style="color: #666;">Get started fast with one of our unique, pre-built concepts.</h2>
+                    <p>We've built 10 fresh and distinct concepts to showcase Foundry's adaptability for almost any purpose.</p>
+                    <div class="id-div">
+                        <p>Stunning design, prompt support with an easy to use site builder make this and outstanding product. Well done Medium Rare!</p>
+                        <ul>
+                            <li>
+                                <img src="https://images.unsplash.com/photo-1583957723119-330fc2738e64?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=567&q=80">
+                                some one
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- fifth section (jumbotrron with carousel) -->
+        <div class="container-fluid fifth-section no-padding">
+            <div class="col no-padding">
+                <div class="first-jum d-flex justify-content-center">
+                    <div class="my-auto text-center whole-container">
+                        <div>
+                            <img src="https://images.unsplash.com/photo-1583957723119-330fc2738e64?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=567&q=80">
+                            <img src="https://images.unsplash.com/photo-1583957723119-330fc2738e64?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=567&q=80">
+                            <img src="https://images.unsplash.com/photo-1583957723119-330fc2738e64?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=567&q=80">
+                            <img src="https://images.unsplash.com/photo-1583957723119-330fc2738e64?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=567&q=80">
+                            <img src="https://images.unsplash.com/photo-1583957723119-330fc2738e64?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=567&q=80">
+                        </div>
+                        <div id="fifth-section-carousel" class="carousel slide carousel-fade" data-ride="carousel">
+                            <h2 id="people">People just like you are already loving Foundry</h2>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <p>It's clear to see just how seriously these guys take design. I've never come across a template with the level of polish as this - and don't even get me started on the page builder, there is simply NO competition. Customer for life.</p>
+                                    <p class="second-paragraph">Some one said that</p>
+                                </div>
+                                <div class="carousel-item">
+                                    <p>A fine example of atomic design brought to life. As a seasoned template user, I really appreciate the consistent styling for all common tags, it makes customising the sections that much easier. 5 stars as always for an amazing template.</p>
+                                    <p class="second-paragraph">Some one else said that</p>
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#fifth-section-carousel" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#fifth-section-carousel" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- sixth section (buttons with texts) -->
+        <div class="container-fluid sixth-section text-center">
+            <div class="row">
+                <div class="col">
+                    <h1>Flexible, Adaptable & Timeless.</h1>
+                </div>
+            </div>
+            <div class="row icon-div">
+                <div class="col-6 col-md-3">
+                    <div class="whole-icon green-icon">
+                        <div class="sixth-sec-icon">
+                            <i class="fas fa-basketball-ball"></i>
+                        </div>
+                        <div class="f-sixth-sec-icon-text">
+                            basketball
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="whole-icon">
+                        <div class="sixth-sec-icon">
+                            <i class="fas fa-bowling-ball"></i>
+                        </div>
+                        <div class="f-sixth-sec-icon-text">
+                            bowling-ball
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="whole-icon">
+                        <div class="sixth-sec-icon">
+                            <i class="fas fa-city"></i>
+                        </div>
+                        <div class="sixth-sec-icon-text">
+                            city
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="whole-icon">
+                        <div class="sixth-sec-icon">
+                            <i class="fas fa-chalkboard"></i>
+                        </div>
+                        <div class="sixth-sec-icon-text">
+                            board
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p id="sixth-sec-final-paragraph">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- seventh section -->
+        <div class="container-fluid seventh-section">
+            <div class="row align-items-center">
+                <div class="col-sm-12 col-md-6">
+                    <video controls>
+                        <source src="ea-Logo.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="col-sm-12 col-md-6 second-col">
+                    <h2>Design that looks less 'theme' and more you.</h2>
+                    <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- eighth section (bunch of cards) -->
+        <div class="container-fluid eighth-section">
+            <div class="row text-center">
+                <div class="col header">
+                    <h2>Get all this and more by purchasing a copy of Foundry today.</h2>
+                </div>
+            </div>
+            <!-- first three cards -->
+            <div class="row align-items-center first-three-cards">
+                <div class="col-lg-4">
+                    <div class="card">
+                        <h1>Concepts</h1>
+                        <h5>KICKSTART YOUR PROJECT</h5>
+                        <p>Fresh and unique concepts included out of the box. From portfolio to property showcase, Foundry's adaptable look is perfect for your next project.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 second-card">
+                    <div class="card">
+                        <h1>Concepts</h1>
+                        <h5>KICKSTART YOUR PROJECT</h5>
+                        <p>Fresh and unique concepts included out of the box. From portfolio to property showcase, Foundry's adaptable look is perfect for your next project.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card">
+                        <h1>Concepts</h1>
+                        <h5>KICKSTART YOUR PROJECT</h5>
+                        <p>Fresh and unique concepts included out of the box. From portfolio to property showcase, Foundry's adaptable look is perfect for your next project.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- second three cards -->
+            <div class="row align-items-center second-three-cards">
+                <div class="col-lg-4">
+                    <div class="card">
+                        <h1>Concepts</h1>
+                        <h5>KICKSTART YOUR PROJECT</h5>
+                        <p>Fresh and unique concepts included out of the box. From portfolio to property showcase, Foundry's adaptable look is perfect for your next project.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 second-card">
+                    <div class="card">
+                        <h1>Concepts</h1>
+                        <h5>KICKSTART YOUR PROJECT</h5>
+                        <p>Fresh and unique concepts included out of the box. From portfolio to property showcase, Foundry's adaptable look is perfect for your next project.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card">
+                        <h1>Concepts</h1>
+                        <h5>KICKSTART YOUR PROJECT</h5>
+                        <p>Fresh and unique concepts included out of the box. From portfolio to property showcase, Foundry's adaptable look is perfect for your next project.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ninth section -->
+        <div class="container-fluid ninth-section no-padding">
+            <div class="container-fluid no-padding">
+                <div class="row text-center first-r">
+                    <div class="col-md-6 col-lg-4">
+                        <h1>Limitless</h1>
+                        <h5>KICKSTART YOUR PROJECT</h5>
+                    </div>
+                    <div class="col-lg-4 d-none d-lg-block">
+                        <i class="fas fa-infinity"></i>
+                    </div>
+                    <div class="col-md-6 col-lg-4 third-col">
+                        <h1>Limitless</h1>
+                        <h5>KICKSTART YOUR PROJECT</h5>
+                    </div>
+                </div>
+                <div class="row text-center second-r">
+                    <div class="col">
+                        <h2>Fresh and unique concepts included out of the box</h2>
+                        <h2>from portfolio to property showcase</h2>
+                    </div>
+                </div>
+                <div class="row text-center">
+                    <div class="col">
+                        <button>Check it out</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- footer -->
+        <footer>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card">
+                            <h1>FARAH</h1>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card">
+                            <h1>RECENT POSTS</h1>
+                            <hr>
+                            <p class="mb-0"><a href="#">Hugging pugs is super trendy <i class="fas fa-arrow-right"></i></a></p>
+                            <p>February 14, 2016</p>
+                            <p class="mb-0"><a href="#">Spinning vinyl is oh so cool <i class="fas fa-arrow-right"></i></a></p>
+                            <p>February 14, 2015</p>
+                            <p class="mb-0"><a href="#">Superior theme design by pros <i class="fas fa-arrow-right"></i></a></p>
+                            <p>March 5, 2000</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 second-card">
+                        <div class="card">
+                            <h1>LATEST UPDATES</h1>
+                            <hr>
+                            <div class="d-flex">
+                                <div>
+                                    <i class="fab fa-twitter"></i>
+                                </div>
+                                <div class="ml-2">
+                                    <p class="mb-0">We have a new template on #Themeforest! Jumpstart is a snappy site template for your next SaaS, app or other software project. Only $10 for a limited time.</p>
+                                    <p><a href="#">http://mmra.re/buyjumpstart</a></p>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="d-flex">
+                                <div>
+                                    <i class="fab fa-twitter"></i>
+                                </div>
+                                <div class="ml-2">
+                                    <p class="mb-0">Leap Bootstrap Template is now updated with SVG injection. Why manage SVGs the hard way? Launch on time + look on trend with Leap.</p>
+                                    <p><a href="#">https://leap.mediumra.re/</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 second-card">
+                        <div class="card">
+                            <h1>INSTAGRAM</h1>
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+                <div class="row second-row">
+                    <div class="col-sm-6">
+                        <p style="color: gray">designed by Farah</p>
+                    </div>
+                    <div class="col-sm-6 four-icons">
+                        <div>
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-facebook-f mx-2"></i>
+                            <i class="fas fa-globe mr-2"></i>
+                            <i class="fab fa-vimeo-v"></i>
+                        </div>
+                    </div>    
+                </div>
+                <div class="row">
+                    <div class="col text-center">
+                        <button id="top-button">top</button>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="jq.js"></script>
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+</html>
