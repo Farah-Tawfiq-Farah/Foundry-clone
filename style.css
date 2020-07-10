@@ -12,6 +12,13 @@
 }
 /* end of style the font size of the headers */
 
+/* remove negative margin */
+.row {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+/* end of remove negative margin */
 /* animate drop down menus and style the search form */
 @media screen and (min-width: 992px) {
     .dropdown:hover > .dropdown-menu {
