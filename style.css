@@ -400,15 +400,17 @@ footer button:hover {
     font-size: 3rem;
 }
 
-.carousel-caption p {
-    font-size: 1.5rem;
-    font-weight: 100;
-}
-
 .carousel-button {
     padding: .5rem 1.3rem;
     font-size: 20px;
     border-radius: 0;
+}
+
+@media screen and (max-width: 380px){
+    .carousel-caption h2 {
+        font-weight: 300;
+        font-size: 2rem;
+    }
 }
 
 @media screen and (max-width: 768px) {
