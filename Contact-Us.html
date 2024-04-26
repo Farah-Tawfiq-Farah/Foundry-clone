@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="zxx">
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Contact Us</title>
@@ -11,7 +11,7 @@
     <body>
         <!-- create navbar -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top"> 
-            <a class="navbar-brand" href="index.html" style="letter-spacing: 4px;">FARAH</a>
+            <h1><a class="navbar-brand" href="./index.html">FARAH</a></h1>
             <!-- create hamburger button -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -21,42 +21,43 @@
                 <ul class="navbar-nav ml-auto">
                     <!-- some nav items (same pages) -->
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">HOME</a>
+                        <a class="nav-link" href="./index.html">HOME</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="FAQ.html">FAQ</a>
+                        <a class="nav-link" href="./FAQ.html">FAQ</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="Contact-Us.html">CONTACT US</a>
+                        <a class="nav-link" href="./Contact-Us.html">CONTACT US</a>
                     </li>
                     <!-- pages dropdown menu -->
                     <li class="nav-item dropdown pages-item">
-                        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            PAGES <i class="fas fa-angle-down fa-lg"></i>
+                        <a class="nav-link" href="#" id="navbarDropdownPages" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            PAGES <span class="fas fa-angle-down fa-lg"></span>
                         </a>
-                        <div class="dropdown-menu dropdown-menu-right animate slideIn pages-div" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="index.html">Home</a>
-                            <a class="dropdown-item" href="FAQ.html">FAQ</a>
-                            <a class="dropdown-item" href="Contact-Us.html">Contact Us</a>
+                        <div class="dropdown-menu dropdown-menu-right animate slideIn pages-div" aria-labelledby="navbarDropdownPages">
+                            <a class="dropdown-item" href="./index.html">Home</a>
+                            <a class="dropdown-item" href="./FAQ.html">FAQ</a>
+                            <a class="dropdown-item" href="./Contact-Us.html">Contact Us</a>
                         </div>
                     </li>
                     <!-- Search bar dropdown menu -->
                     <li class="nav-item dropdown search-item">
-                        <a class="nav-link drop-btn" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <i class="fas fa-search fa-lg"></i><span class="search-text"> SEARCH SITE</span>
+                        <a class="nav-link drop-btn" href="#" id="navbarDropdownSearch" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="fas fa-search fa-lg"></span><span class="search-text"> SEARCH SITE</span>
                         </a>
-                        <div class="dropdown-menu dropdown-menu-right animate slideIn search-dropdown" aria-labelledby="navbarDropdown" style="padding: 0;">
+                        <div class="dropdown-menu dropdown-menu-right animate slideIn search-dropdown" aria-labelledby="navbarDropdownSearch">
                             <form class="form-inline search-form">
-                                <input type="text" placeholder="Search" aria-label="Search">
+                                <label id="search-label" for="search">search</label>
+                                <input id="search" type="text" placeholder="Search" aria-label="Search">
                             </form>
                         </div>
                     </li>
                     <!-- language dropdown menu -->
                     <li class="nav-item dropdown lang-item">
-                        <a class="nav-link drop-btn" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            ENG <i class="fas fa-angle-down fa-lg"></i>
+                        <a class="nav-link drop-btn" href="#" id="navbarDropdownLang" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            ENG <span class="fas fa-angle-down fa-lg"></span>
                         </a>
-                        <div class="dropdown-menu dropdown-menu-right animate slideIn languages-div" aria-labelledby="navbarDropdown" style="padding: 0;">
+                        <div class="dropdown-menu dropdown-menu-right animate slideIn languages-div" aria-labelledby="navbarDropdownLang">
                             <a class="dropdown-item" href="#">French</a>
                             <a class="dropdown-item" href="#">Spanish</a>
                         </div>
@@ -70,28 +71,28 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-6">
-                        <h1>CONTACT US</h1>
+                        <h2>CONTACT US</h2>
                     </div>
                     <div class="col-lg-6 second-col">
-                        <a href="index.html">Home</a>
+                        <a href="./index.html">Home</a>
                         <span>/</span>
-                        <a href="#">Pages</a>
+                        <a href="./FAQ.html">FAQ</a>
                         <span>/</span>
-                        <p style="color: gray; display: inline;">Contact</p>
+                        <p>Contact Us</p>
                     </div>
                 </div>
             </div>
         </div>
 
         <!-- map section -->
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3218.061739899898!2d43.99459211000991!3d36.23799415640924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40071f37d65a6041%3A0x9a549d08e0652b3b!2sMaxi%20Mall%20Outlet!5e0!3m2!1sen!2siq!4v1594056533676!5m2!1sen!2siq" width="100%" height="350" frameborder="0" style="border-top:1px solid #FFF;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3218.061739899898!2d43.99459211000991!3d36.23799415640924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40071f37d65a6041%3A0x9a549d08e0652b3b!2sMaxi%20Mall%20Outlet!5e0!3m2!1sen!2siq!4v1594056533676!5m2!1sen!2siq" height="350" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 
         <!-- form section -->
         <div class="container-fluid contact-form">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-sm-12 col-md-6">
-                        <h3>GET IN TOUCH</h3>
+                        <h2>GET IN TOUCH</h2>
                         <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident,</p>
                         <hr>
                         <p>438 Marine Parade</p>
@@ -103,9 +104,12 @@
                     </div>
                     <div class="col-sm-12 col-md-6 second-col">
                         <div class="form" style="width: 100%;">
-                            <input type="text" class="d-block" placeholder="Name">
-                            <input type="email" class="d-block" placeholder="Email">
-                            <textarea rows="3" class="d-block" placeholder="Your message here..."></textarea>
+                            <label for="name" class="hidden-label">Name</label>
+                            <input id="name" type="text" class="d-block" placeholder="Name">
+                            <label for="email" class="hidden-label">Email</label>
+                            <input id="email" type="email" class="d-block" placeholder="Email">
+                            <label for="message" class="hidden-label">Message</label>
+                            <textarea id="message" rows="3" class="d-block" placeholder="Your message here..."></textarea>
                             <button>Send message</button>
                         </div>
                     </div>
@@ -119,28 +123,28 @@
                 <div class="row">
                     <div class="col-md-6 col-lg-3">
                         <div class="card">
-                            <h1>FARAH</h1>
+                            <h3>FARAH</h3>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-3">
                         <div class="card">
-                            <h1>RECENT POSTS</h1>
+                            <h3>RECENT POSTS</h3>
                             <hr>
-                            <p class="mb-0"><a href="#">Hugging pugs is super trendy <i class="fas fa-arrow-right"></i></a></p>
+                            <p class="mb-0"><a href="#">Hugging pugs is super trendy <span class="fas fa-arrow-right"></span></a></p>
                             <p>February 14, 2016</p>
-                            <p class="mb-0"><a href="#">Spinning vinyl is oh so cool <i class="fas fa-arrow-right"></i></a></p>
+                            <p class="mb-0"><a href="#">Spinning vinyl is oh so cool <span class="fas fa-arrow-right"></span></a></p>
                             <p>February 14, 2015</p>
-                            <p class="mb-0"><a href="#">Superior theme design by pros <i class="fas fa-arrow-right"></i></a></p>
+                            <p class="mb-0"><a href="#">Superior theme design by pros <span class="fas fa-arrow-right"></span></a></p>
                             <p>March 5, 2000</p>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-3 second-card">
                         <div class="card">
-                            <h1>LATEST UPDATES</h1>
+                            <h3>LATEST UPDATES</h3>
                             <hr>
                             <div class="d-flex">
                                 <div>
-                                    <i class="fab fa-twitter"></i>
+                                    <span class="fab fa-twitter"></span>
                                 </div>
                                 <div class="ml-2">
                                     <p class="mb-0">We have a new template on #Themeforest! Jumpstart is a snappy site template for your next SaaS, app or other software project. Only $10 for a limited time.</p>
@@ -150,7 +154,7 @@
                             <br>
                             <div class="d-flex">
                                 <div>
-                                    <i class="fab fa-twitter"></i>
+                                    <span class="fab fa-twitter"></span>
                                 </div>
                                 <div class="ml-2">
                                     <p class="mb-0">Leap Bootstrap Template is now updated with SVG injection. Why manage SVGs the hard way? Launch on time + look on trend with Leap.</p>
@@ -161,21 +165,21 @@
                     </div>
                     <div class="col-md-6 col-lg-3 second-card">
                         <div class="card">
-                            <h1>INSTAGRAM</h1>
+                            <h3>INSTAGRAM</h3>
                             <hr>
                         </div>
                     </div>
                 </div>
                 <div class="row second-row">
                     <div class="col-sm-6">
-                        <p style="color: gray">designed by Farah Farah</p>
+                        <p>Designed by Farah Farah</p>
                     </div>
                     <div class="col-sm-6 four-icons">
                         <div>
-                            <i class="fab fa-twitter"></i>
-                            <i class="fab fa-facebook-f mx-2"></i>
-                            <i class="fas fa-globe mr-2"></i>
-                            <i class="fab fa-vimeo-v"></i>
+                            <span class="fab fa-twitter"></span>
+                            <span class="fab fa-facebook-f mx-2"></span>
+                            <span class="fas fa-globe mr-2"></span>
+                            <span class="fab fa-vimeo-v"></span>
                         </div>
                     </div>    
                 </div>
@@ -191,7 +195,7 @@
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
         <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
-        <script type="text/javascript" src="jq.js"></script>
+        <script src="jq.js"></script>
         <script src="script.js"></script>
     </body>
 </html>
