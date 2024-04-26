@@ -39,6 +39,8 @@
         margin-left: 30px;
     }
     .search-item {
+        display: flex;
+        align-items: center;
         border-right: 1px solid #bbb;
         border-left: 1px solid #bbb;
         height: 61px;
@@ -156,6 +158,7 @@
     padding-bottom: 10px;
     margin-top: auto;
     margin-bottom: auto;
+    letter-spacing: 4px;
 }
 
 .navbar {
@@ -191,6 +194,14 @@
 
 .dropdown-item:hover {
     background-color: #343a40 !important;
+}
+
+#search-label{
+    display: none;
+}
+
+.search-dropdown, .languages-div{
+    padding: 0;
 }
 /* end of style navbar, drop down menus and their items */
 
@@ -247,7 +258,7 @@ footer .second-row {
     margin-top: 25px;
 }
 
-footer h1 {
+footer h3 {
     font-size: 1.5rem;
     font-weight: 300;
 }
@@ -284,7 +295,7 @@ footer .four-icons{
     color: gray;
 }
 
-footer .four-icons i:hover {
+footer .four-icons span:hover {
     color: #fff;
     cursor: pointer;
 }
@@ -357,11 +368,11 @@ footer button:hover {
 }
 
 #my-carousel {
-    margin-top:61px;
+    margin-top: 64px;
 }
 
 .carousel-inner{
-    width:100%;
+    width: 100%;
     max-height: 550px !important;
 }
 
@@ -384,7 +395,7 @@ footer button:hover {
     color: black;
 }
 
-.carousel-caption h1 {
+.carousel-caption h2 {
     font-weight: 300;
     font-size: 3rem;
 }
@@ -454,6 +465,7 @@ footer button:hover {
 
 .second-section h2 {
     font-weight: normal;
+    color: #666;
 }
 
 .second-section p {
@@ -508,7 +520,7 @@ footer button:hover {
     margin-top: 50px;
 }
 
-.third-section i {
+.third-section span {
     padding-bottom: 30px;
     color: #47b475 !important;
     font-size: 100px;
@@ -570,6 +582,7 @@ footer button:hover {
 
 .fourth-section h2 {
     font-weight: normal;
+    color: #666;
 }
 
 .fourth-section p {
@@ -822,7 +835,7 @@ footer button:hover {
     font-weight: 400;
 }
 
-.eighth-section .card h5 {
+.eighth-section .card h3 {
     font-size: 1.2rem;
     color: #47b475 !important;
 }
@@ -888,11 +901,12 @@ footer button:hover {
     font-weight: 300;
 }
 
-.ninth-section h5 {
+.ninth-section h3 {
     font-weight: 300;
+    font-size: 1.25rem;
 }
 
-.ninth-section i {
+.ninth-section span {
     font-size: 6rem;
 }
 
@@ -963,7 +977,7 @@ footer button:hover {
 /* style of the Contact-Us page */
 /* style of the header section*/
 .contact-FAQ-header {
-    margin-top : 61px;
+    margin-top : 64px;
     height: 300px;
     background-color: #f2f2f2;
     display: flex;
@@ -972,10 +986,11 @@ footer button:hover {
     padding-right: 100px;
 }
 
-.contact-FAQ-header h1 {
+.contact-FAQ-header h2 {
     font-weight: 200;
     word-spacing: 20px;
     letter-spacing: 5px;
+    font-size: 2.5rem;
 }
 
 .contact-FAQ-header .second-col {
@@ -997,6 +1012,11 @@ footer button:hover {
     margin-right: 20px;
 }
 
+.contact-FAQ-header p{
+    display: inline;
+    color: #604020;
+}
+
 @media screen and (max-width: 991px) {
     .contact-FAQ-header .second-col {
         text-align: left;
@@ -1010,6 +1030,13 @@ footer button:hover {
 }
 /* end of style of the header section*/
 
+/* style of the map */
+iframe{
+    width: 100%;
+    border-top:1px solid #FFF;
+}
+/* end of style of the map */
+
 /* style of the form section*/
 .contact-form {
     margin-top: 75px;
@@ -1017,7 +1044,7 @@ footer button:hover {
     padding-left: 100px;
 }
 
-.contact-form h3 {
+.contact-form h2 {
     font-weight: 200;
     font-size: 2.5rem;
 }
@@ -1061,6 +1088,10 @@ footer button:hover {
     height: 50px;
 }
 
+.hidden-label{
+    display: none;
+}
+
 @media screen and (max-width: 991px) {
     .contact-form {
         padding-left: 15px;
@@ -1085,7 +1116,7 @@ footer button:hover {
     margin-bottom: 75px;
 }
 
-.FAQ-first-section h3 {
+.FAQ-first-section h2 {
     font-weight: 300;
     margin-bottom: 20px;
 }
@@ -1101,7 +1132,7 @@ footer button:hover {
     display: inline-block;
 }
 
-.questions-section .question h3{
+.questions-section .question h2{
     display: inline;
     font-weight: 300;
     margin-left: 5px;
@@ -1144,5 +1175,10 @@ footer button:hover {
     opacity: 1;
 }
 /* end of style of the questions section */
-/* end of style of the FAQ page */
 
+/* style of the footer */
+.FAQ-footer{
+    margin-top: 75px;
+}
+/* end of style of the footer */
+/* end of style of the FAQ page */
